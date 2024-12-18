@@ -1,0 +1,54 @@
+.custom-btn {
+    color: rgb(255, 255, 255); 
+    font-weight: bold; 
+    padding: 1rem 2rem; 
+    border-radius: 1.5rem; 
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-btn:hover {
+    transform: scale(2.05); /* Aumenta ligeramente el tamaño del botón */
+}
+
+.custom-btn-1 {
+    background-color: #000000; 
+}
+
+.custom-btn-1:hover {
+    background-color: #a20a0a; /* Oscurece el color al hacer hover */
+}
+
+.custom-btn-2 {
+    background-color: #b75412; 
+    color: black; 
+}
+
+.custom-btn-2:hover {
+    background-color: #d98b47; /* Cambia a un tono más claro en hover */
+}
+
+.custom-btn-3 {
+    background-color: #1d87ab; 
+}
+
+.custom-btn-3:hover {
+    background-color: #e0a81c; /* Cambia a un tono más oscuro en hover */
+}
+
+.custom-btn-4 {
+    background-color: #3151df; 
+}
+
+.custom-btn-4:hover {
+    background-color: #9299be; /* Cambia a un tono más oscuro en hover */
+}
+
+.custom-btn-5 {
+    background-color: #041604; 
+}
+
+.custom-btn-5:hover {
+    background-color: #d9dcd9; /* Cambia a un tono más oscuro en hover */
+}

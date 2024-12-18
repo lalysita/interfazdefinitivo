@@ -1,0 +1,59 @@
+<div class="container">
+  <h2>Formulario de Inscripción de Jugador</h2>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+          <label for="firstName">Nombre del Jugador:</label>
+          <input type="text" id="firstName" formControlName="firstName" placeholder="Ingresa tu nombre" />
+      </div>
+
+      <div class="form-group">
+          <label for="lastName">Apellidos:</label>
+          <input type="text" id="lastName" formControlName="lastName" placeholder="Ingresa tus apellidos" />
+      </div>
+
+      <div class="form-group">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" formControlName="email" placeholder="Ingresa tu correo electrónico" />
+      </div>
+
+      <div class="form-group">
+          <label for="cedula">Cédula:</label>
+          <input type="text" id="cedula" formControlName="cedula" placeholder="Ingresa tu cédula" />
+      </div>
+
+      <div class="form-group">
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" formControlName="direccion" placeholder="Ingresa tu dirección" />
+      </div>
+
+      <div class="form-group">
+          <label for="gender">Posición:</label>
+          <select id="gender" formControlName="position">
+              <option value="">Seleccione una opción</option>
+              <option value="forward">Delantero</option>
+              <option value="midfielder">Mediocampista</option>
+              <option value="defender">Defensor</option>
+              <option value="goalkeeper">Portero</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+          <label for="experience">Nivel de Experiencia:</label>
+          <select id="experience" formControlName="experience">
+              <option value="">Seleccione una opción</option>
+              <option value="novice">Novato</option>
+              <option value="intermediate">Intermedio</option>
+              <option value="advanced">Avanzado</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" rows="4" formControlName="message" placeholder="Cuentanos hace cuanto juegas futbol y si alguna vez haz campeonado junto a tu equipo"></textarea>
+      </div>
+
+      <div class="form-group">
+          <button type="submit">Enviar</button>
+      </div>
+  </form>
+</div>

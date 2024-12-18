@@ -1,0 +1,80 @@
+
+.container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background-image: url('https://bagre.life/wp-content/uploads/2022/11/supercampeones-e1668950305567.jpg'); /* Cambia esta URL por la de la imagen que desees */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(86, 85, 85);
+  backdrop-filter: blur(5px); /* Para darle un toque desenfocado al fondo */
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(94, 85, 85, 0.689); /* Fondo semitransparente */
+    z-index: -2; /* Coloca la capa encima del fondo pero debajo del contenido */
+}
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #92c072;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  background: rgba(255, 255, 255, 0.8); 
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
